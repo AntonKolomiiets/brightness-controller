@@ -1,14 +1,3 @@
-// import ExpoModulesCore
-
-// public class BrightnessControllerModule: Module {
-//     public func definition() -> ModuleDefinition {
-//         Name("BrightnessController")
-
-//         Function("setBrightness") { (brightness: Float) in
-//             UIScreen.main.brightness = CGFloat(brightness)
-//         }
-//     }
-// }
 
 import ExpoModulesCore
 

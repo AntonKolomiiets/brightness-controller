@@ -11,7 +11,6 @@ export default function App() {
   const [currentBrightness, setCurrentBrightness] = useState(0.5);
 
   useEffect(() => {
-    // Fetch and set the current brightness level when the component mounts
     const fetchBrightness = async () => {
       const brightnessLevel = await Brightness.getBrightnessAsync();
       setCurrentBrightness(brightnessLevel);
@@ -21,10 +20,6 @@ export default function App() {
     fetchBrightness();
   }, []);
 
-  // const handleBrightnessChange = (value: number) => {
-  //   setBrightnessState(value);
-  //   BrightnessController.setBrightness(value);
-  // };
 
   const handleBrightnessChange = async (value: number) => {
     setBrightnessState(value);
